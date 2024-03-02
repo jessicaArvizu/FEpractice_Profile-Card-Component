@@ -1,3 +1,48 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body{
+  font-family: "Kumbh Sans", sans-serif;
+  font-style: normal;
+}
+
+.card{
+  @apply block w-[350px] h-[380px] bg-white rounded-2xl overflow-hidden;
+}
+
+.card__container{
+  @apply grid justify-items-center;
+}
+
+.card__container__image{
+  @apply rounded-full border-white border-4 mt-[-50px];
+}
+
+.card__container__title{
+  @apply font-bold text-lg mt-4 mb-2 tracking-normal;
+}
+
+.card__container__span{
+  @apply text-dark-grayish-blue tracking-wide ml-2;
+}
+
+.card__container__subtitle{
+  @apply text-sm text-dark-grayish-blue tracking-wide mb-6;
+}
+
+.card__footer {
+  @apply flex justify-between w-full border-t border-slate-300 py-4 px-11;
+}
+
+.card__footer__container{
+  @apply grid justify-items-center;
+}
+
+.card__footer__container__num{
+  @apply font-bold text-lg;
+}
+
+.card__footer__container__text{
+  @apply text-xs tracking-widest text-dark-grayish-blue;
+}
